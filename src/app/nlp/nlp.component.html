@@ -1,0 +1,32 @@
+<div class = "center2">
+    <div class="p-3 mb-2 bg-primary text-white">
+    <h2>معالجة اللغة الام</h2>
+</div>
+</div>
+<div class = "center">
+    <div align = 'right'>
+    <h2>:ادخل النص هنا</h2>
+</div>
+</div>
+<div class="container-fluid">
+    <div class="input-group">
+        <div class = "center">
+        <form #userPost = "ngForm" (ngSubmit)="onSubmit(userPost.value)">
+            <textarea class="form-control" aria-label="With textarea" name= "docs" ngModel></textarea><br>
+            <button type = "submit" class="btn btn-primary">ارسل</button>
+        </form>
+    </div>
+    </div>
+</div>
+<div class = "center">
+    <div align = 'right'>
+    <h2>:النتيجة</h2>
+</div>
+</div>
+<div class = "center1">
+<div class="card w-100">
+    <div class="card-body">
+        <h3>{{ docs }}</h3>
+    </div>
+  </div>    
+</div>
